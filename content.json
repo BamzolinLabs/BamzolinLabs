@@ -1,0 +1,73 @@
+{
+  "theme": {
+    "bg_color": "#F5F4EE",
+    "text_color": "#21261F",
+    "accent_color": "#3A7563",
+    "accent_color_2": "#D9A441",
+    "logo": "",
+    "logo_position": "left"
+  },
+  "hero": {
+    "eyebrow": "Graphic Designer",
+    "headline": "Design that makes ideas easy to",
+    "headline_emphasis": "reach.",
+    "subtext": "I'm Bamzolin — a graphic designer who builds brand systems, social content, and educational visuals with clarity and warmth. Below is a closer look at one recent project.",
+    "cta_primary_label": "View case study",
+    "cta_primary_link": "#work",
+    "cta_secondary_label": "Get in touch",
+    "cta_secondary_link": "#contact"
+  },
+  "case_study": {
+    "label": "Case Study — 01",
+    "title": "PrymeKids — building a visual language for young learners",
+    "client": "PrymeKids",
+    "category": "Educational platform for children",
+    "role": "Brand & content designer",
+    "tools": "Canva, Affinity",
+    "brief": "PrymeKids needed its brand ideas turned into content kids and parents would actually stop and look at — starting from dense brochure material that needed a friendlier, more visual translation.",
+    "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
+    "deliverables": [
+      { "title": "Infographics", "description": "Brochure content restructured into clear, scannable infographic layouts built in Canva." },
+      { "title": "\"Did You Know?\" series", "description": "A recurring social media format sharing bite-sized facts in an approachable, on-brand style." },
+      { "title": "Instagram Stories", "description": "A set of Story templates and one-off designs extending the brand into daily social content." }
+    ],
+    "visuals": [
+      { "image": "", "caption": "Infographic — swap with image" },
+      { "image": "", "caption": "Infographic — swap with image" },
+      { "image": "", "caption": "Instagram Story design" },
+      { "image": "", "caption": "Instagram Story design" }
+    ],
+    "wide_visual": { "image": "", "caption": "\"Did You Know?\" post — wide banner image" },
+    "ticker_facts": [
+      "Replace this with a real fact from the series",
+      "Add a second fact here",
+      "Add a third fact here"
+    ],
+    "outcomes": [
+      { "stat": "3", "description": "Content formats designed — infographics, a recurring fact series, and Story templates" },
+      { "stat": "1", "description": "Consistent visual system extended across every platform touchpoint" },
+      { "stat": "↑", "description": "Add your real result here — engagement lift, parent feedback, etc." }
+    ]
+  },
+  "about": {
+    "photo": "",
+    "paragraphs": [
+      "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
+      "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
+    ]
+  },
+  "socials": [
+    { "label": "Email me", "url": "mailto:youremail@example.com", "style": "primary" },
+    { "label": "Instagram", "url": "#", "style": "secondary" },
+    { "label": "WhatsApp", "url": "#", "style": "secondary" }
+  ],
+  "footer": {
+    "title": "Let's work together.",
+    "name": "Bamzolin — Graphic Design",
+    "year": "2026"
+  },
+  "documents": [
+    { "title": "Resume / CV", "file": "" },
+    { "title": "PrymeKids one-pager", "file": "" }
+  ]
+}
