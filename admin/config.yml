@@ -1,0 +1,121 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images/documents get stored in the repo,
+# and the path the live site uses to load them from.
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "content"
+        label: "Full Site Content"
+        file: "content.json"
+        fields:
+          - label: "Appearance"
+            name: "theme"
+            widget: "object"
+            fields:
+              - { label: "Background color", name: "bg_color", widget: "color" }
+              - { label: "Text color", name: "text_color", widget: "color" }
+              - { label: "Accent color (links, highlights)", name: "accent_color", widget: "color" }
+              - { label: "Accent color 2 (numbers, ticker)", name: "accent_color_2", widget: "color" }
+              - { label: "Logo image (leave blank to use text logo)", name: "logo", widget: "image", required: false }
+              - label: "Logo position"
+                name: "logo_position"
+                widget: "select"
+                options: ["left", "center"]
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow label", name: "eyebrow", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Headline (emphasized word)", name: "headline_emphasis", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+              - { label: "Primary button label", name: "cta_primary_label", widget: "string" }
+              - { label: "Primary button link", name: "cta_primary_link", widget: "string" }
+              - { label: "Secondary button label", name: "cta_secondary_label", widget: "string" }
+              - { label: "Secondary button link", name: "cta_secondary_link", widget: "string" }
+
+          - label: "Case Study Section"
+            name: "case_study"
+            widget: "object"
+            fields:
+              - { label: "Section label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Client", name: "client", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Tools", name: "tools", widget: "string" }
+              - { label: "Brief", name: "brief", widget: "text" }
+              - { label: "Approach", name: "approach", widget: "text" }
+              - label: "Deliverables"
+                name: "deliverables"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Visuals (image grid)"
+                name: "visuals"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Caption", name: "caption", widget: "string" }
+              - label: "Wide banner visual"
+                name: "wide_visual"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Caption", name: "caption", widget: "string" }
+              - label: "\"Did You Know?\" ticker facts"
+                name: "ticker_facts"
+                widget: "list"
+                field: { label: "Fact", name: "fact", widget: "string" }
+              - label: "Outcome stats"
+                name: "outcomes"
+                widget: "list"
+                fields:
+                  - { label: "Stat (short)", name: "stat", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - label: "Bio paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+          - label: "Socials / CTA buttons (footer)"
+            name: "socials"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link", name: "url", widget: "string" }
+              - label: "Button style"
+                name: "style"
+                widget: "select"
+                options: ["primary", "secondary"]
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Footer title", name: "title", widget: "string" }
+              - { label: "Name / signature", name: "name", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+
+          - label: "Documents (resume, PDFs, etc.)"
+            name: "documents"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "File", name: "file", widget: "file", required: false }
+              
