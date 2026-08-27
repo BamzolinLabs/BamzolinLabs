@@ -4,19 +4,19 @@
     "links": [
       {
         "label": "Home",
-        "url": "#top"
+        "url": "https://bamzolinlabs.netlify.app"
       },
       {
         "label": "About",
         "url": "#about"
       },
       {
-        "label": "Work",
-        "url": "#work"
+        "label": "Pinterest",
+        "url": "https://www.pinterest.com/thatcreativebamzo/"
       }
     ],
     "cta_label": "Get in touch",
-    "cta_link": "#contact"
+    "cta_link": "https://wa.link/l346t8"
   },
   "socials": [
     {
@@ -51,13 +51,13 @@
         "name": "PrymeKids"
       },
       {
-        "name": "Bamzolin Labs"
+        "name": "TeeBlack Unisex Salon"
       },
       {
-        "name": "Nwera AI"
+        "name": "Webprowale"
       },
       {
-        "name": "CAN Youth"
+        "name": "Xel"
       }
     ]
   },
@@ -70,15 +70,15 @@
   },
   "gallery": [
     {
-      "image": "",
+      "image": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
       "caption": "Project visual — replace with image"
     },
     {
-      "image": "",
+      "image": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
       "caption": "Project visual — replace with image"
     },
     {
-      "image": "",
+      "image": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
       "caption": "Project visual — replace with image"
     }
   ],
@@ -151,7 +151,7 @@
   },
   "hero": {
     "eyebrow": "Hey, I'm a",
-    "headline": "Graphic Designer",
+    "headline": "Creative Designer",
     "photo": "",
     "tagline": "Great design should feel invisible.",
     "subtext": "From brand systems to social content, I build visuals that connect and convert.",
@@ -171,6 +171,10 @@
       {
         "number": "04",
         "label": "App & Icon Design"
+      },
+      {
+        "number": "05",
+        "label": "Print Media"
       }
     ]
   },
