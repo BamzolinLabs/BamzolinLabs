@@ -2,8 +2,6 @@ backend:
   name: git-gateway
   branch: main
 
-# Where uploaded images/documents get stored in the repo,
-# and the path the live site uses to load them from.
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
@@ -21,32 +19,83 @@ collections:
             fields:
               - { label: "Background color", name: "bg_color", widget: "color" }
               - { label: "Text color", name: "text_color", widget: "color" }
-              - { label: "Accent color (links, highlights)", name: "accent_color", widget: "color" }
-              - { label: "Accent color 2 (numbers, ticker)", name: "accent_color_2", widget: "color" }
+              - { label: "Accent color (hero gradient start, CTAs)", name: "accent_color", widget: "color" }
+              - { label: "Accent color 2 (hero gradient end)", name: "accent_color_2", widget: "color" }
+              - label: "Body / UI font"
+                name: "font_body"
+                widget: "select"
+                options: ["Space Grotesk", "Hanken Grotesk", "Familjen Grotesk", "Inter"]
               - { label: "Logo image (leave blank to use text logo)", name: "logo", widget: "image", required: false }
               - label: "Logo position"
                 name: "logo_position"
                 widget: "select"
                 options: ["left", "center"]
 
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "Logo text (used if no logo image)", name: "logo_text", widget: "string" }
+              - label: "Nav links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "url", widget: "string" }
+              - { label: "Nav button label", name: "cta_label", widget: "string" }
+              - { label: "Nav button link", name: "cta_link", widget: "string" }
+
           - label: "Hero Section"
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Eyebrow label", name: "eyebrow", widget: "string" }
+              - { label: "Eyebrow (\"Hey, I'm a\")", name: "eyebrow", widget: "string" }
               - { label: "Headline", name: "headline", widget: "string" }
-              - { label: "Headline (emphasized word)", name: "headline_emphasis", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "text" }
-              - { label: "Primary button label", name: "cta_primary_label", widget: "string" }
-              - { label: "Primary button link", name: "cta_primary_link", widget: "string" }
-              - { label: "Secondary button label", name: "cta_secondary_label", widget: "string" }
-              - { label: "Secondary button link", name: "cta_secondary_link", widget: "string" }
+              - { label: "Portrait photo", name: "photo", widget: "image", required: false }
+              - { label: "Tagline (right side, bold)", name: "tagline", widget: "string" }
+              - { label: "Subtext (right side, smaller)", name: "subtext", widget: "text" }
+              - label: "Feature numbers row"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
 
-          - label: "Case Study Section"
-            name: "case_study"
+          - label: "Brand Strip"
+            name: "brands"
             widget: "object"
             fields:
-              - { label: "Section label", name: "label", widget: "string" }
+              - { label: "Label text", name: "label", widget: "text" }
+              - label: "Logos / names"
+                name: "logos"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+
+          - label: "\"Behind the Designs\" Section"
+            name: "behind"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Subtext (next to button)", name: "subtext", widget: "string" }
+              - { label: "Button label", name: "cta_label", widget: "string" }
+              - { label: "Button link", name: "cta_link", widget: "string" }
+
+          - label: "Gallery (3-image grid)"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Caption", name: "caption", widget: "string" }
+
+          - label: "Case Studies"
+            name: "case_studies"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Section label (e.g. Case Study — 01)", name: "label", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Client", name: "client", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
@@ -60,28 +109,17 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-              - label: "Visuals (image grid)"
-                name: "visuals"
+              - label: "Images"
+                name: "images"
                 widget: "list"
                 fields:
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Caption", name: "caption", widget: "string" }
-              - label: "Wide banner visual"
-                name: "wide_visual"
-                widget: "object"
-                fields:
-                  - { label: "Image", name: "image", widget: "image", required: false }
-                  - { label: "Caption", name: "caption", widget: "string" }
-              - label: "\"Did You Know?\" ticker facts"
+              - label: "\"Did You Know?\" ticker facts (optional)"
                 name: "ticker_facts"
                 widget: "list"
+                required: false
                 field: { label: "Fact", name: "fact", widget: "string" }
-              - label: "Outcome stats"
-                name: "outcomes"
-                widget: "list"
-                fields:
-                  - { label: "Stat (short)", name: "stat", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
 
           - label: "About Section"
             name: "about"
@@ -118,4 +156,3 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "File", name: "file", widget: "file", required: false }
-              
