@@ -21,17 +21,17 @@
   "socials": [
     {
       "label": "Email me",
-      "url": "mailto:youremail@example.com",
+      "url": "mailto:bamiseoladimeji613@gmail.com",
       "style": "primary"
     },
     {
       "label": "Instagram",
-      "url": "#",
+      "url": "https://www.instagram.com/bam_zolin?igsh=bmx3dWhmY3V1bjFm",
       "style": "secondary"
     },
     {
       "label": "WhatsApp",
-      "url": "#",
+      "url": "https://wa.link/l346t8",
       "style": "secondary"
     }
   ],
@@ -62,7 +62,7 @@
     ]
   },
   "about": {
-    "photo": "",
+    "photo": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
     "paragraphs": [
       "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
       "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
@@ -147,12 +147,12 @@
     "paragraph": "I'm a graphic designer focused on building clear, engaging visuals that solve real communication problems — from brand systems to educational content.",
     "subtext": "Let's build something meaningful together.",
     "cta_label": "Get in touch",
-    "cta_link": "#contact"
+    "cta_link": "https://wa.link/l346t8"
   },
   "hero": {
     "eyebrow": "Hey, I'm a",
     "headline": "Creative Designer",
-    "photo": "",
+    "photo": "/assets/uploads/204298.jpg",
     "tagline": "Great design should feel invisible.",
     "subtext": "From brand systems to social content, I build visuals that connect and convert.",
     "features": [
@@ -180,7 +180,7 @@
   },
   "footer": {
     "title": "Let's work together.",
-    "name": "Bamzolin — Graphic Design",
+    "name": "Bamzolin Labs — Creative Design",
     "year": "2026"
   }
 }
