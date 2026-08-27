@@ -1,87 +1,99 @@
 {
   "theme": {
-    "bg_color": "#1218ee",
-    "text_color": "#000000",
-    "accent_color": "#ffffff",
-    "accent_color_2": "#D9A441",
+    "bg_color": "#0E0C0B",
+    "text_color": "#FFFFFF",
+    "accent_color": "#FF5A1F",
+    "accent_color_2": "#B3220A",
+    "font_body": "Space Grotesk",
     "logo": "",
     "logo_position": "left"
   },
+  "nav": {
+    "logo_text": "Bamzolin",
+    "links": [
+      { "label": "Home", "url": "#top" },
+      { "label": "About", "url": "#about" },
+      { "label": "Work", "url": "#work" }
+    ],
+    "cta_label": "Get in touch",
+    "cta_link": "#contact"
+  },
   "hero": {
-    "eyebrow": "Creative Designer",
-    "headline": "Design that makes ideas easy to",
-    "headline_emphasis": "reach.",
-    "subtext": "I'm Bamzolin — a graphic designer who builds brand systems, social content, and educational visuals with clarity and warmth. Below is a closer look at one recent project.",
-    "cta_primary_label": "Recent Works",
-    "cta_primary_link": "#work",
-    "cta_secondary_label": "Hire Me!",
-    "cta_secondary_link": "#contact"
+    "eyebrow": "Hey, I'm a",
+    "headline": "Graphic Designer",
+    "photo": "",
+    "tagline": "Great design should feel invisible.",
+    "subtext": "From brand systems to social content, I build visuals that connect and convert.",
+    "features": [
+      { "number": "01", "label": "Brand Identity Design" },
+      { "number": "02", "label": "Social Content Design" },
+      { "number": "03", "label": "Educational Design" },
+      { "number": "04", "label": "App & Icon Design" }
+    ]
   },
-  "case_study": {
-    "outcomes": [
-      {
-        "stat": "3",
-        "description": "Content formats designed — infographics, a recurring fact series, and Story templates"
-      },
-      {
-        "stat": "1",
-        "description": "Consistent visual system extended across every platform touchpoint"
-      },
-      {
-        "stat": "↑",
-        "description": "Add your real result here — engagement lift, parent feedback, etc."
-      }
-    ],
-    "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
-    "client": "PrymeKids",
-    "wide_visual": {
-      "image": "",
-      "caption": "\"Did You Know?\" post — wide banner image"
+  "brands": {
+    "label": "Brands & Projects I've Helped Shape",
+    "logos": [
+      { "name": "PrymeKids" },
+      { "name": "Bamzolin Labs" },
+      { "name": "Nwera AI" },
+      { "name": "CAN Youth" }
+    ]
+  },
+  "behind": {
+    "eyebrow": "Behind the Designs",
+    "headline": "Turning Ideas Into Visuals People Actually Stop For",
+    "paragraph": "I'm a graphic designer focused on building clear, engaging visuals that solve real communication problems — from brand systems to educational content.",
+    "subtext": "Let's build something meaningful together.",
+    "cta_label": "Get in touch",
+    "cta_link": "#contact"
+  },
+  "gallery": [
+    { "image": "", "caption": "Project visual — replace with image" },
+    { "image": "", "caption": "Project visual — replace with image" },
+    { "image": "", "caption": "Project visual — replace with image" }
+  ],
+  "case_studies": [
+    {
+      "label": "Case Study — 01",
+      "title": "PrymeKids — building a visual language for young learners",
+      "client": "PrymeKids",
+      "category": "Educational platform for children",
+      "role": "Brand & content designer",
+      "tools": "Canva, Affinity",
+      "brief": "PrymeKids needed its brand ideas turned into content kids and parents would actually stop and look at — starting from dense brochure material that needed a friendlier, more visual translation.",
+      "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
+      "deliverables": [
+        { "title": "Infographics", "description": "Brochure content restructured into clear, scannable infographic layouts built in Canva." },
+        { "title": "\"Did You Know?\" series", "description": "A recurring social media format sharing bite-sized facts in an approachable, on-brand style." },
+        { "title": "Instagram Stories", "description": "A set of Story templates and one-off designs extending the brand into daily social content." }
+      ],
+      "images": [
+        { "image": "", "caption": "Infographic — swap with image" },
+        { "image": "", "caption": "Infographic — swap with image" },
+        { "image": "", "caption": "Instagram Story design" },
+        { "image": "", "caption": "Instagram Story design" }
+      ],
+      "ticker_facts": [
+        "Replace this with a real fact from the series",
+        "Add a second fact here",
+        "Add a third fact here"
+      ]
     },
-    "ticker_facts": [
-      "Replace this with a real fact from the series",
-      "Add a second fact here",
-      "Add a third fact here"
-    ],
-    "visuals": [
-      {
-        "image": "",
-        "caption": "Infographic — swap with image"
-      },
-      {
-        "image": "",
-        "caption": "Infographic — swap with image"
-      },
-      {
-        "image": "",
-        "caption": "Instagram Story design"
-      },
-      {
-        "image": "",
-        "caption": "Instagram Story design"
-      }
-    ],
-    "deliverables": [
-      {
-        "title": "Infographics",
-        "description": "Brochure content restructured into clear, scannable infographic layouts built in Canva."
-      },
-      {
-        "title": "\"Did You Know?\" series",
-        "description": "A recurring social media format sharing bite-sized facts in an approachable, on-brand style."
-      },
-      {
-        "title": "Instagram Stories",
-        "description": "A set of Story templates and one-off designs extending the brand into daily social content."
-      }
-    ],
-    "label": "Project— 01",
-    "role": "Brand & content designer",
-    "title": "PrymeKids — building a visual language for young learners",
-    "brief": "PrymeKids needed its brand ideas turned into content kids and parents would actually stop and look at — starting from dense brochure material that needed a friendlier, more visual translation.",
-    "tools": "Canva, Affinity",
-    "category": "Educational platform for children"
-  },
+    {
+      "label": "Case Study — 02",
+      "title": "Add your next case study title here",
+      "client": "",
+      "category": "",
+      "role": "",
+      "tools": "",
+      "brief": "",
+      "approach": "",
+      "deliverables": [],
+      "images": [],
+      "ticker_facts": []
+    }
+  ],
   "about": {
     "photo": "",
     "paragraphs": [
@@ -90,21 +102,9 @@
     ]
   },
   "socials": [
-    {
-      "label": "Email me",
-      "url": "mailto:youremail@example.com",
-      "style": "primary"
-    },
-    {
-      "label": "Instagram",
-      "url": "#",
-      "style": "secondary"
-    },
-    {
-      "label": "WhatsApp",
-      "url": "#",
-      "style": "secondary"
-    }
+    { "label": "Email me", "url": "mailto:youremail@example.com", "style": "primary" },
+    { "label": "Instagram", "url": "#", "style": "secondary" },
+    { "label": "WhatsApp", "url": "#", "style": "secondary" }
   ],
   "footer": {
     "title": "Let's work together.",
@@ -112,13 +112,7 @@
     "year": "2026"
   },
   "documents": [
-    {
-      "title": "Resume / CV",
-      "file": ""
-    },
-    {
-      "title": "PrymeKids one-pager",
-      "file": ""
-    }
+    { "title": "Resume / CV", "file": "" },
+    { "title": "PrymeKids one-pager", "file": "" }
   ]
 }
