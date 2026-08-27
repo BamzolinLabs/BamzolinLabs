@@ -3,12 +3,12 @@
     "logo_text": "Bamzolin Labs",
     "links": [
       {
-        "label": "Home",
-        "url": "https://bamzolinlabs.netlify.app"
-      },
-      {
         "label": "About",
         "url": "#about"
+      },
+      {
+        "label": "Home",
+        "url": "https://bamzolinlabs.netlify.app"
       },
       {
         "label": "Pinterest",
@@ -88,8 +88,8 @@
       "client": "PrymeKids",
       "ticker_facts": [
         "Replace this with a real fact from the series",
-        "Add a second fact here",
-        "Add a third fact here"
+        "Add a third fact here",
+        "Add a second fact here"
       ],
       "deliverables": [
         {
@@ -110,7 +110,7 @@
       "title": "PrymeKids — building a visual language for young learners",
       "images": [
         {
-          "image": "",
+          "image": "/assets/uploads/203522.png",
           "caption": "Infographic — swap with image"
         },
         {
