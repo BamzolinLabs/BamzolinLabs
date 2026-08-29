@@ -27,12 +27,17 @@
     {
       "label": "Instagram",
       "url": "#",
-      "style": "secondary"
+      "style": "primary"
     },
     {
-      "label": "WhatsApp",
+      "label": "Pinterest",
       "url": "#",
-      "style": "secondary"
+      "style": "primary"
+    },
+    {
+      "label": "Behance",
+      "url": "#",
+      "style": "primary"
     }
   ],
   "theme": {
@@ -66,7 +71,7 @@
     ]
   },
   "about": {
-    "photo": "",
+    "photo": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
     "paragraphs": [
       "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
       "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
@@ -139,11 +144,11 @@
   ],
   "documents": [
     {
-      "title": "Resume / CV",
+      "title": "PrymeKids one-pager",
       "file": ""
     },
     {
-      "title": "PrymeKids one-pager",
+      "title": "Resume / CV",
       "file": ""
     }
   ],
@@ -182,7 +187,7 @@
   },
   "footer": {
     "title": "Let's work together.",
-    "name": "Bamzolin — Graphic Design",
+    "name": "That Creative Bamzo — Creative Designer",
     "year": "2026"
   }
 }
