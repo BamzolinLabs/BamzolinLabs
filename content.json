@@ -16,7 +16,7 @@
       }
     ],
     "cta_label": "Hire Me",
-    "cta_link": "#"
+    "cta_link": "https://wa.link/ijcdjc"
   },
   "socials": [
     {
@@ -77,7 +77,7 @@
     ]
   },
   "about": {
-    "photo": "",
+    "photo": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
     "paragraphs": [
       "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
       "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
@@ -101,7 +101,7 @@
     {
       "view_more_label": "View more",
       "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
-      "view_more_link": "https://drive.google.com/drive/folders/1uO3AnmCLKz445K-CBSVQwi90KlIfOy43",
+      "view_more_link": "#",
       "client": "PrymeKids",
       "ticker_facts": [
         "Replace this with a real fact from the series",
@@ -127,19 +127,19 @@
       "title": "PrymeKids — building a visual language for young learners",
       "images": [
         {
-          "image": "/assets/uploads/203522.png",
+          "image": "/assets/uploads/august-28th.png",
           "caption": "Infographic — swap with image"
         },
         {
-          "image": "",
+          "image": "/assets/uploads/august-27th.png",
           "caption": "Infographic — swap with image"
         },
         {
-          "image": "",
+          "image": "/assets/uploads/july-10th.png",
           "caption": "Instagram Story design"
         },
         {
-          "image": "",
+          "image": "/assets/uploads/slice1.jpg",
           "caption": "Instagram Story design"
         }
       ],
@@ -164,7 +164,7 @@
     "paragraph": "I'm a graphic designer focused on building clear, engaging visuals that solve real communication problems — from brand systems to educational content.",
     "subtext": "Let's build something meaningful together.",
     "cta_label": "Get in touch",
-    "cta_link": "#contact"
+    "cta_link": "https://wa.link/ijcdjc"
   },
   "hero": {
     "eyebrow": "Hey, I'm a",
