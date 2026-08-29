@@ -51,10 +51,10 @@ collections:
             fields:
               - { label: "Eyebrow (\"Hey, I'm a\")", name: "eyebrow", widget: "string" }
               - { label: "Headline", name: "headline", widget: "string" }
-              - { label: "Portrait photo", name: "photo", widget: "image", required: false }
               - { label: "Tagline (right side, bold)", name: "tagline", widget: "string" }
               - { label: "Subtext (right side, smaller)", name: "subtext", widget: "text" }
-              - label: "Feature numbers row"
+              - { label: "Feature numbers row — heading", name: "features_heading", widget: "string" }
+              - label: "Feature numbers row — items"
                 name: "features"
                 widget: "list"
                 fields:
@@ -71,6 +71,7 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Icon (PNG, 16x16px)", name: "icon", widget: "image", required: false }
 
           - label: "\"Behind the Designs\" Section"
             name: "behind"
@@ -120,6 +121,8 @@ collections:
                 widget: "list"
                 required: false
                 field: { label: "Fact", name: "fact", widget: "string" }
+              - { label: "\"View more\" button label", name: "view_more_label", widget: "string", required: false }
+              - { label: "\"View more\" button link (leave blank to hide button)", name: "view_more_link", widget: "string", required: false }
 
           - label: "About Section"
             name: "about"
