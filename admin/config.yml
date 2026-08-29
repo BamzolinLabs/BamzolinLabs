@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: BamzolinLabs/BamzolinLabs
   branch: main
+  base_url: https://decap-oauth.bamiseoladimeji614.workers.dev
+  auth_endpoint: auth
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
