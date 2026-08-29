@@ -15,8 +15,8 @@
         "url": "#work"
       }
     ],
-    "cta_label": "Get in touch",
-    "cta_link": "#contact"
+    "cta_label": "Hire Me",
+    "cta_link": "#"
   },
   "socials": [
     {
@@ -54,24 +54,30 @@
     "logos": [
       {
         "name": "PrymeKids",
-        "icon": "/assets/uploads/favicon-white.png"
-      },
-      {
-        "name": "Bamzolin Labs",
         "icon": ""
       },
       {
-        "name": "Nwera AI",
+        "name": "Xel.Care",
         "icon": ""
       },
       {
-        "name": "CAN Youth",
+        "name": "Webprowale",
         "icon": ""
+      },
+      {
+        "name": "TeeBlack Unisex Salon ",
+        "icon": ""
+      },
+      {
+        "name": "The Potter's Porch International Churches "
+      },
+      {
+        "name": "CareerPadi"
       }
     ]
   },
   "about": {
-    "photo": "/assets/uploads/whatsapp-image-2026-02-21-at-8.54.29-pm-1-.jpg",
+    "photo": "",
     "paragraphs": [
       "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
       "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
@@ -181,7 +187,15 @@
       },
       {
         "number": "04",
-        "label": "App & Icon Design"
+        "label": "App  Icon Design"
+      },
+      {
+        "number": "05",
+        "label": "Campaign Designs "
+      },
+      {
+        "number": "06",
+        "label": "Ads Designs"
       }
     ]
   },
