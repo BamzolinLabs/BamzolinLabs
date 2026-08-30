@@ -62,14 +62,15 @@
       },
       {
         "name": "Webprowale",
-        "icon": ""
+        "icon": "assets/uploads/web-fav2.png"
       },
       {
         "name": "TeeBlack Unisex Salon ",
-        "icon": ""
+        "icon": "assets/uploads/tb-unisex-fav.png"
       },
       {
-        "name": "The Potter's Porch International Churches "
+        "name": "The Potter's Porch International Churches ",
+        "icon": "assets/uploads/tppic-fav.png"
       },
       {
         "name": "CareerPadi"
@@ -163,7 +164,7 @@
     "headline": "Turning Ideas Into Visuals People Actually Stop For",
     "paragraph": "I'm a graphic designer focused on building clear, engaging visuals that solve real communication problems — from brand systems to educational content.",
     "subtext": "Let's build something meaningful together.",
-    "cta_label": "Get in touch",
+    "cta_label": "Hire Me",
     "cta_link": "https://wa.link/ijcdjc"
   },
   "hero": {
