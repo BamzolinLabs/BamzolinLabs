@@ -21,8 +21,8 @@
   "socials": [
     {
       "label": "Email me",
-      "url": "mailto:youremail@example.com",
-      "style": "primary"
+      "url": "bamiseoladimeji613@gmail.com",
+      "style": "secondary"
     },
     {
       "label": "Instagram",
@@ -37,7 +37,7 @@
     {
       "label": "Behance",
       "url": "#",
-      "style": "primary"
+      "style": "secondary"
     }
   ],
   "theme": {
@@ -58,7 +58,7 @@
       },
       {
         "name": "Xel.Care",
-        "icon": ""
+        "icon": "assets/uploads/xel-favicon_-white-.png"
       },
       {
         "name": "Webprowale",
@@ -101,7 +101,7 @@
     {
       "view_more_label": "View more",
       "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
-      "view_more_link": "#",
+      "view_more_link": "https://pin.it/5Hqn9C2li",
       "client": "PrymeKids",
       "ticker_facts": [
         "Replace this with a real fact from the series",
@@ -144,7 +144,7 @@
         }
       ],
       "brief": "PrymeKids needed its brand ideas turned into content kids and parents would actually stop and look at — starting from dense brochure material that needed a friendlier, more visual translation.",
-      "tools": "Canva, Affinity",
+      "tools": "Photoshop, Affinity",
       "category": "Educational platform for children"
     }
   ],
