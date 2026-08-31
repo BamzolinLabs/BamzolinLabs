@@ -40,7 +40,7 @@
     "text_color": "#FFFFFF",
     "accent_color": "#FF5A1F",
     "accent_color_2": "#B3220A",
-    "font_body": "Space Grotesk",
+    "font_body": "Hanken Grotesk",
     "logo": "",
     "logo_position": "left"
   },
@@ -131,51 +131,66 @@
     {
       "view_more_label": "View more",
       "approach": "I rebuilt the brochure content as a system of infographics, then extended that system into two ongoing content formats so the brand had a consistent voice across posts and stories, not just one-off graphics.",
-      "view_more_link": "",
+      "view_more_link": "https://pin.it/6YxyC9Zdh",
       "client": "PrymeKids",
       "ticker_facts": [
-        "Replace this with a real fact from the series",
-        "Add a second fact here",
-        "Add a third fact here"
+        "PrymeKids is an online learning experience that helps children learn, play and  connect from the comfort of home.",
+        "We built PrymeKids for real families who want more than passive screen time."
       ],
-      "deliverables": [
-        {
-          "title": "Infographics",
-          "description": "Brochure content restructured into clear, scannable infographic layouts built in Canva."
-        },
-        {
-          "title": "\"Did You Know?\" series",
-          "description": "A recurring social media format sharing bite-sized facts in an approachable, on-brand style."
-        },
-        {
-          "title": "Instagram Stories",
-          "description": "A set of Story templates and one-off designs extending the brand into daily social content."
-        }
-      ],
+      "deliverables": [],
       "label": "Case Study — 01",
-      "role": "Brand & content designer",
+      "role": "Lead brand & content designer",
       "title": "PrymeKids — building a visual language for young learners",
       "images": [
         {
-          "image": "",
+          "image": "assets/uploads/august-27th.png",
           "caption": "Infographic — swap with image"
         },
         {
-          "image": "",
+          "image": "assets/uploads/august-28th.png",
           "caption": "Infographic — swap with image"
         },
         {
-          "image": "",
+          "image": "assets/uploads/august-20th.png",
           "caption": "Instagram Story design"
         },
         {
-          "image": "",
+          "image": "assets/uploads/ads-design-compressed.jpg",
           "caption": "Instagram Story design"
         }
       ],
       "brief": "PrymeKids needed its brand ideas turned into content kids and parents would actually stop and look at — starting from dense brochure material that needed a friendlier, more visual translation.",
-      "tools": "Canva, Affinity",
+      "tools": "Canva, Affinity, Photoshop, Adobe Illustrator",
       "category": "Educational platform for children"
+    },
+    {
+      "view_more_label": "https://pin.it/4oNvZwsx1",
+      "approach": "My approach applies strict geometric grid alignment, high-contrast visual hierarchy, and task-driven layout structures to reflect Xel's autonomous AI coordination while maintaining brand integrity across all touchpoints.",
+      "client": "Xel.Care",
+      "ticker_facts": [
+        "Xel.Care replaces human coordination with autonomous,  governed agents.",
+        "We are building: An agent-native university, not a software tool."
+      ],
+      "label": "Case Study — 02",
+      "role": "Lead brand & content designer",
+      "title": "Xel — building an agent-native university, not a software tool.",
+      "images": [
+        {
+          "image": "assets/uploads/slice1..png"
+        },
+        {
+          "image": "assets/uploads/healthcare-needs-more-people.png"
+        },
+        {
+          "image": "assets/uploads/may-1st-2026.png"
+        },
+        {
+          "image": "assets/uploads/ready-to-become-a-cna-design.png"
+        }
+      ],
+      "brief": "Xel is an agent-native healthcare university whose visual identity leverages Inter typography, a primary #2563EB blue palette, and a grid-constructed logo mark to convey systematic trust and scale.",
+      "tools": "Canva, Affinity, Photoshop, Adobe Illustrator",
+      "category": "Healthcare University"
     }
   ],
   "documents": [
