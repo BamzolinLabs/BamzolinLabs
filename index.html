@@ -488,6 +488,7 @@
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
       <textarea name="message" placeholder="Tell me about your project" required></textarea>
+      <input type="text" name="_gotcha" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
     </form>
     <div class="contact-links" id="footer-ctas"></div>
@@ -749,6 +750,9 @@ function escapeHtml(str){
 
 loadSite();
 </script>
+
+<!-- Cloudflare Web Analytics — replace YOUR_TOKEN_HERE with your real token from the Cloudflare dashboard -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
 
 </body>
 </html>
