@@ -87,6 +87,16 @@ collections:
               - { label: "Button label", name: "cta_label", widget: "string" }
               - { label: "Button link", name: "cta_link", widget: "string" }
 
+          - label: "Skills / Tools Strip"
+            name: "skills"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Tools / skills"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+
           - label: "Gallery (3-image grid)"
             name: "gallery"
             widget: "list"
@@ -127,6 +137,33 @@ collections:
               - { label: "\"View more\" button label", name: "view_more_label", widget: "string", required: false }
               - { label: "\"View more\" button link (leave blank to hide button)", name: "view_more_link", widget: "string", required: false }
 
+          - label: "Currently Building"
+            name: "building"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Projects"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Status (e.g. In progress, Launched)", name: "status", widget: "string", required: false }
+                  - { label: "Link", name: "link", widget: "string", required: false }
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Quotes"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Quote", name: "quote", widget: "text" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role / Company", name: "role", widget: "string", required: false }
+
           - label: "About Section"
             name: "about"
             widget: "object"
@@ -155,6 +192,12 @@ collections:
               - { label: "Footer title", name: "title", widget: "string" }
               - { label: "Name / signature", name: "name", widget: "string" }
               - { label: "Year", name: "year", widget: "string" }
+
+          - label: "Contact Form (Formspree)"
+            name: "contact_form"
+            widget: "object"
+            fields:
+              - { label: "Formspree Form ID (leave blank to hide the form — get one free at formspree.io)", name: "formspree_id", widget: "string", required: false }
 
           - label: "Documents (resume, PDFs, etc.)"
             name: "documents"
