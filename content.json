@@ -32,7 +32,7 @@
     {
       "label": "Pinterest",
       "url": "https://pin.it/14q1rjEY5#",
-      "style": "secondary"
+      "style": "primary"
     }
   ],
   "theme": {
@@ -116,7 +116,7 @@
     "heading": "What People Say",
     "items": [
       {
-        "quote": "Really nice design today. Weldone Bamise!",
+        "quote": "Really nice designs. Weldone Bamise!",
         "name": "Fauzeeya",
         "role": "Project Manager/ Prymekids"
       },
