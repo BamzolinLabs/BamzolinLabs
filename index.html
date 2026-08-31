@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bamzolin — Graphic Designer</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0E0C0B">
+
+<!-- SEO / Open Graph -->
+<meta name="description" content="Bamzolin — graphic designer building brand systems, social content, and educational visuals.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bamzolin — Graphic Designer">
+<meta property="og:description" content="Brand systems, social content, and educational visuals that connect and convert.">
+<meta property="og:image" content="assets/favicon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bamzolin — Graphic Designer">
+<meta name="twitter:description" content="Brand systems, social content, and educational visuals that connect and convert.">
+<meta name="twitter:image" content="assets/favicon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -37,6 +54,32 @@
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
     html{scroll-behavior:auto;}
+  }
+
+  html[data-theme="light"]{
+    --bg: #F7F5F1;
+    --panel: #FFFFFF;
+    --ink: #1B1916;
+    --ink-soft: #6B655C;
+    --line: #E4E0D8;
+  }
+  html[data-theme="light"] body{
+    background:
+      radial-gradient(circle at 20% 10%, #FBEBDD 0%, transparent 45%),
+      radial-gradient(circle at 90% 90%, #F3E7DB 0%, transparent 55%),
+      #F7F5F1;
+  }
+  html[data-theme="light"] .gallery-item{background:linear-gradient(135deg, #EFEBE2, #E2DCD0);}
+  html[data-theme="light"] .cs-visual, html[data-theme="light"] .deliverable-card{background:var(--panel);}
+  html[data-theme="light"] .about-photo{background:linear-gradient(135deg, #EFEBE2, #E2DCD0);}
+
+  .theme-toggle{
+    width:38px; height:38px; border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    border:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1rem; color:#fff;
+    margin-right:10px;
   }
 
   .canvas{
@@ -290,7 +333,39 @@
   .doc-item:hover{border-color:var(--accent);}
   .doc-item .arrow{color:var(--accent); font-size:0.85rem;}
 
-  /* FOOTER */
+  /* SKILLS STRIP */
+  .skills-strip{background:var(--bg); border-top:1px solid var(--line); padding:40px 32px;}
+  .skills-heading{font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); margin-bottom:16px; display:block; font-weight:600;}
+  .skills-row{display:flex; flex-wrap:wrap; gap:10px;}
+  .skill-chip{padding:9px 16px; border-radius:100px; border:1px solid var(--line); font-size:0.85rem; color:var(--ink); background:var(--panel);}
+
+  /* TESTIMONIALS */
+  .testimonials{background:var(--bg); padding:70px 32px; border-top:1px solid var(--line);}
+  .testimonials-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; margin-top:28px;}
+  .testimonial-card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px;}
+  .testimonial-card .quote{font-size:0.98rem; line-height:1.6; margin-bottom:18px; color:rgba(255,255,255,0.9);}
+  html[data-theme="light"] .testimonial-card .quote{color:var(--ink);}
+  .testimonial-card .person{font-size:0.85rem; color:var(--ink-soft);}
+  .testimonial-card .person b{color:var(--ink); font-weight:600;}
+
+  /* CURRENTLY BUILDING */
+  .building{background:var(--bg); padding:70px 32px; border-top:1px solid var(--line);}
+  .building-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; margin-top:28px;}
+  .building-card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:24px;}
+  .building-card .status{display:inline-block; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); border:1px solid var(--accent); border-radius:100px; padding:4px 10px; margin-bottom:14px;}
+  .building-card h4{font-weight:700; font-size:1.1rem; margin-bottom:8px;}
+  .building-card p{font-size:0.88rem; color:var(--ink-soft); margin-bottom:14px;}
+  .building-card a{font-size:0.85rem; font-weight:600; color:var(--accent); text-decoration:none;}
+
+  /* CONTACT FORM */
+  .contact-form{margin-top:20px; margin-bottom:44px; display:grid; gap:12px; max-width:480px;}
+  .contact-form input, .contact-form textarea{
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:13px 16px; color:var(--ink); font-family:var(--font-body); font-size:0.92rem;
+  }
+  .contact-form textarea{min-height:110px; resize:vertical;}
+  .contact-form input::placeholder, .contact-form textarea::placeholder{color:var(--ink-soft);}
+  .contact-form button{align-self:start;}
   footer{padding:60px 32px 40px; background:var(--panel); border-top:1px solid var(--line);}
   footer h2{font-weight:700; font-size:clamp(1.6rem, 4vw, 2.2rem); margin-bottom:22px; max-width:14ch;}
   .contact-links{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:44px;}
@@ -309,10 +384,18 @@
     .deliverables{grid-template-columns:1fr;}
     .gallery-grid{grid-template-columns:1fr 1fr;}
     .about-grid{grid-template-columns:1fr;}
+    .testimonials-grid{grid-template-columns:1fr;}
+    .building-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
 <body>
+<script>
+  (function(){
+    const saved = localStorage.getItem('bamzolin-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+  })();
+</script>
 
 <div class="canvas" id="top">
 
@@ -320,7 +403,10 @@
     <nav id="site-nav">
       <div class="logo" id="site-logo">Bamzolin</div>
       <div class="navlinks" id="nav-links"></div>
-      <a href="#contact" class="nav-cta" id="nav-cta">Get in touch <span class="arrow">→</span></a>
+      <div style="display:flex; align-items:center;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+        <a href="#contact" class="nav-cta" id="nav-cta">Get in touch <span class="arrow">→</span></a>
+      </div>
     </nav>
 
     <div class="hero-body">
@@ -345,6 +431,11 @@
     </div>
   </div>
 
+  <div class="skills-strip">
+    <span class="skills-heading" id="skills-heading"></span>
+    <div class="skills-row" id="skills-row"></div>
+  </div>
+
   <div class="behind">
     <div>
       <span class="behind-eyebrow" id="behind-eyebrow"></span>
@@ -366,6 +457,16 @@
   <div id="work"></div>
   <div id="case-studies-container"></div>
 
+  <section class="building" id="building-section" style="display:none;">
+    <span class="section-label" id="building-heading"></span>
+    <div class="building-grid" id="building-grid"></div>
+  </section>
+
+  <section class="testimonials" id="testimonials-section" style="display:none;">
+    <span class="section-label" id="testimonials-heading"></span>
+    <div class="testimonials-grid" id="testimonials-grid"></div>
+  </section>
+
   <section class="about" id="about">
     <div class="about-grid">
       <div class="about-photo" id="about-photo"></div>
@@ -383,6 +484,12 @@
 
   <footer id="contact">
     <h2 id="footer-title"></h2>
+    <form class="contact-form" id="contact-form" style="display:none;">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Tell me about your project" required></textarea>
+      <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
+    </form>
     <div class="contact-links" id="footer-ctas"></div>
     <div class="foot-bottom">
       <span id="footer-name"></span>
@@ -473,10 +580,18 @@ async function loadSite(){
   // GALLERY
   document.getElementById('gallery-grid').innerHTML = (data.gallery || []).map(g => {
     if (g.image){
-      return `<div class="gallery-item"><img src="${g.image}" alt="${escapeHtml(g.caption || '')}"></div>`;
+      return `<div class="gallery-item"><img src="${g.image}" alt="${escapeHtml(g.caption || '')}" loading="lazy" decoding="async"></div>`;
     }
     return `<div class="gallery-item">${escapeHtml(g.caption || 'Add an image')}</div>`;
   }).join('');
+
+  // SKILLS STRIP
+  if (data.skills){
+    document.getElementById('skills-heading').textContent = data.skills.heading || '';
+    document.getElementById('skills-row').innerHTML = (data.skills.items || []).map(s =>
+      `<span class="skill-chip">${escapeHtml(s)}</span>`
+    ).join('');
+  }
 
   // CASE STUDIES
   const studies = data.case_studies || [];
@@ -507,7 +622,7 @@ async function loadSite(){
       </div>
       <div class="cs-visual-grid">
         ${(cs.images || []).map(v => v.image
-          ? `<div class="cs-visual"><img src="${v.image}" alt="${escapeHtml(v.caption || '')}" class="cs-lightbox-trigger" data-full="${v.image}"></div>`
+          ? `<div class="cs-visual"><img src="${v.image}" alt="${escapeHtml(v.caption || '')}" class="cs-lightbox-trigger" data-full="${v.image}" loading="lazy" decoding="async"></div>`
           : `<div class="cs-visual">${escapeHtml(v.caption || 'Add an image')}</div>`
         ).join('')}
       </div>
@@ -526,10 +641,38 @@ async function loadSite(){
     </section>
   `).join('');
 
+  // CURRENTLY BUILDING
+  const building = (data.building && data.building.items) || [];
+  if (building.length){
+    document.getElementById('building-section').style.display = '';
+    document.getElementById('building-heading').textContent = (data.building && data.building.heading) || 'Currently Building';
+    document.getElementById('building-grid').innerHTML = building.map(b => `
+      <div class="building-card">
+        ${b.status ? `<span class="status">${escapeHtml(b.status)}</span>` : ''}
+        <h4>${escapeHtml(b.title || '')}</h4>
+        <p>${escapeHtml(b.description || '')}</p>
+        ${b.link ? `<a href="${b.link}" target="_blank" rel="noopener">Learn more →</a>` : ''}
+      </div>
+    `).join('');
+  }
+
+  // TESTIMONIALS
+  const testimonials = (data.testimonials && data.testimonials.items) || [];
+  if (testimonials.length){
+    document.getElementById('testimonials-section').style.display = '';
+    document.getElementById('testimonials-heading').textContent = (data.testimonials && data.testimonials.heading) || 'What People Say';
+    document.getElementById('testimonials-grid').innerHTML = testimonials.map(t => `
+      <div class="testimonial-card">
+        <p class="quote">"${escapeHtml(t.quote || '')}"</p>
+        <p class="person"><b>${escapeHtml(t.name || '')}</b>${t.role ? ' — ' + escapeHtml(t.role) : ''}</p>
+      </div>
+    `).join('');
+  }
+
   // ABOUT
   if (data.about){
     if (data.about.photo){
-      document.getElementById('about-photo').innerHTML = `<img src="${data.about.photo}" alt="Portrait">`;
+      document.getElementById('about-photo').innerHTML = `<img src="${data.about.photo}" alt="Portrait" loading="lazy" decoding="async">`;
     }
     document.getElementById('about-paragraphs').innerHTML =
       (data.about.paragraphs || []).map(p => `<p>${escapeHtml(p)}</p>`).join('');
@@ -557,6 +700,14 @@ async function loadSite(){
     <a href="${s.url}" class="btn ${s.style === 'primary' ? 'btn-primary' : 'btn-outline'}">${escapeHtml(s.label)}</a>
   `).join('');
 
+  // CONTACT FORM
+  if (data.contact_form && data.contact_form.formspree_id){
+    const formEl = document.getElementById('contact-form');
+    formEl.action = `https://formspree.io/f/${data.contact_form.formspree_id}`;
+    formEl.method = 'POST';
+    formEl.style.display = '';
+  }
+
   // LIGHTBOX
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -570,6 +721,21 @@ async function loadSite(){
   document.getElementById('lightbox-close').addEventListener('click', () => lightbox.classList.remove('open'));
   lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+
+  // THEME TOGGLE
+  const toggleBtn = document.getElementById('theme-toggle');
+  function updateToggleIcon(){
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    toggleBtn.textContent = current === 'dark' ? '🌙' : '☀️';
+  }
+  updateToggleIcon();
+  toggleBtn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('bamzolin-theme', next);
+    updateToggleIcon();
+  });
 }
 
 function escapeHtml(str){
@@ -582,20 +748,6 @@ function escapeHtml(str){
 }
 
 loadSite();
-</script>
-
-<!-- Netlify Identity: required so the admin login redirect works site-wide -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
 </script>
 
 </body>
