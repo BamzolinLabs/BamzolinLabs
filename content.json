@@ -4,45 +4,34 @@
     "items": [
       "Affinity",
       "Canva",
-      "Figma"
+      "Photoshop",
+      "Adobe Illustrator",
+      "Adobe Lightroom"
     ]
   },
   "nav": {
-    "logo_text": "Bamzolin",
-    "links": [
-      {
-        "label": "Home",
-        "url": "#top"
-      },
-      {
-        "label": "About",
-        "url": "#about"
-      },
-      {
-        "label": "Work",
-        "url": "#work"
-      }
-    ],
-    "cta_label": "Get in touch",
-    "cta_link": "#contact"
+    "logo_text": "That Creative Bamzo",
+    "links": [],
+    "cta_label": "Hire Me",
+    "cta_link": "https://wa.link/vvxcn2"
   },
   "contact_form": {
-    "formspree_id": "https://formspree.io/f/mkjnoznr"
+    "formspree_id": "mkjnoznr"
   },
   "socials": [
     {
-      "label": "Email me",
-      "url": "mailto:youremail@example.com",
+      "label": "Email",
+      "url": "bamiseoladimeji614@gmail.com",
       "style": "primary"
     },
     {
       "label": "Instagram",
-      "url": "#",
-      "style": "secondary"
+      "url": "https://www.instagram.com/bam_zolin/?__pwa=1",
+      "style": "primary"
     },
     {
-      "label": "WhatsApp",
-      "url": "#",
+      "label": "Pinterest",
+      "url": "https://pin.it/14q1rjEY5#",
       "style": "secondary"
     }
   ],
@@ -60,27 +49,31 @@
     "logos": [
       {
         "name": "PrymeKids",
-        "icon": ""
+        "icon": "assets/uploads/favicon-white.png"
       },
       {
-        "name": "Bamzolin Labs",
-        "icon": ""
+        "name": "The Potters Porch International Churches — Lagos",
+        "icon": "assets/uploads/tppic-fav.png"
       },
       {
-        "name": "Nwera AI",
-        "icon": ""
+        "name": "TeeBlack Unisex Salon",
+        "icon": "assets/uploads/tb-unisex-fav.png"
       },
       {
-        "name": "CAN Youth",
-        "icon": ""
+        "name": "Webprowale",
+        "icon": "assets/uploads/web-fav2.png"
+      },
+      {
+        "name": "Xel.Care",
+        "icon": "assets/uploads/xel-favicon_-white-.png"
       }
     ]
   },
   "about": {
-    "photo": "",
+    "photo": "assets/uploads/204298.jpg",
     "paragraphs": [
-      "I'm a fourth-year Mechanical Engineering student and self-taught graphic designer, currently building Bamzolin Labs — a design and cybersecurity brand — alongside client work like PrymeKids.",
-      "Add 2-3 more sentences here about your design philosophy, how you got started, or what you enjoy designing most."
+      "I'm Bamzolin, a self-taught graphic designer working under Bamzolin Labs. My approach is rooted in intentional visual storytelling — bold, high-contrast compositions that carry emotional weight, whether I'm building a brand identity, an app icon, or a campaign visual. Alongside design, I bring a Mechanical Engineering background into my process, which shows up as precision in the details: grid systems, geometry, and production specs that hold up at any scale.",
+      "My work spans branding and visual identity for platforms like PrymeKids, an educational space for children, as well as personal and community projects that lean into symbolism and narrative depth. I care about the story behind every project as much as the final output — every color, shape, and layout choice is made to serve something bigger. Bamzolin Labs is where that philosophy lives: a space where design meets purpose."
     ]
   },
   "gallery": [
@@ -107,16 +100,32 @@
         "link": ""
       },
       {
-        "title": "Nwera AI",
+        "title": "CareerPadi",
         "description": "A CV-tailoring AI platform helping job seekers get noticed.",
         "status": "In progress",
         "link": ""
+      },
+      {
+        "title": "Tithan",
+        "description": "Tithan is a cloud platform for Developers.",
+        "status": "In Progress "
       }
     ]
   },
   "testimonials": {
     "heading": "What People Say",
-    "items": []
+    "items": [
+      {
+        "quote": "Really nice design today. Weldone Bamise!",
+        "name": "Fauzeeya",
+        "role": "Project Manager/ Prymekids"
+      },
+      {
+        "quote": "The designs are on steroids. Welldone Bamise!",
+        "name": "PMA",
+        "role": "The Potter's Porch International Churches — Lagos"
+      }
+    ]
   },
   "case_studies": [
     {
@@ -189,7 +198,7 @@
   },
   "hero": {
     "eyebrow": "Hey, I'm a",
-    "headline": "Graphic Designer",
+    "headline": "Creative Designer",
     "tagline": "Great design should feel invisible.",
     "subtext": "From brand systems to social content, I build visuals that connect and convert.",
     "features_heading": "Services I render",
@@ -208,13 +217,21 @@
       },
       {
         "number": "04",
-        "label": "App & Icon Design"
+        "label": "App Icon Design"
+      },
+      {
+        "number": "05",
+        "label": "Campaign Design"
+      },
+      {
+        "number": "06",
+        "label": "Church Design "
       }
     ]
   },
   "footer": {
     "title": "Let's work together.",
-    "name": "Bamzolin — Graphic Design",
+    "name": "That Creative Bamzo — Creative Design",
     "year": "2026"
   }
 }
