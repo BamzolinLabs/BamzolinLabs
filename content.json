@@ -164,8 +164,9 @@
       "category": "Educational platform for children"
     },
     {
-      "view_more_label": "https://pin.it/4oNvZwsx1",
+      "view_more_label": "View more",
       "approach": "My approach applies strict geometric grid alignment, high-contrast visual hierarchy, and task-driven layout structures to reflect Xel's autonomous AI coordination while maintaining brand integrity across all touchpoints.",
+      "view_more_link": "https://pin.it/4oNvZwsx1",
       "client": "Xel.Care",
       "ticker_facts": [
         "Xel.Care replaces human coordination with autonomous,  governed agents.",
