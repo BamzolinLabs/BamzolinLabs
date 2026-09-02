@@ -40,7 +40,7 @@
     "text_color": "#FFFFFF",
     "accent_color": "#FF5A1F",
     "accent_color_2": "#B3220A",
-    "font_body": "Hanken Grotesk",
+    "font_body": "Space Grotesk",
     "logo": "",
     "logo_position": "left"
   },
@@ -66,6 +66,9 @@
       {
         "name": "Xel.Care",
         "icon": "assets/uploads/xel-favicon_-white-.png"
+      },
+      {
+        "name": "KwiikPos"
       }
     ]
   },
