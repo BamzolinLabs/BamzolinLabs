@@ -199,6 +199,37 @@
       "brief": "Xel is an agent-native healthcare university whose visual identity leverages Inter typography, a primary #2563EB blue palette, and a grid-constructed logo mark to convey systematic trust and scale.",
       "tools": "Canva, Affinity, Photoshop, Adobe Illustrator",
       "category": "Healthcare University"
+    },
+    {
+      "view_more_label": "View more",
+      "approach": "I studied their designs and formulate the matching colour palette to their previous designs, and i also gathered resources that complement the ones on ground, this which helped me maintain the consistency they sought.",
+      "view_more_link": "https://pin.it/4MB7PE1sD",
+      "client": "TPPIC — LagoS",
+      "deliverables": [],
+      "label": "Case Study — 03",
+      "role": "Associate Graphic Designer",
+      "title": "The Potters Porch International Churches — Lagos",
+      "images": [
+        {
+          "image": "assets/uploads/tppic1.jpg",
+          "caption": "Sunday Service Design"
+        },
+        {
+          "image": "assets/uploads/tppic2.jpg",
+          "caption": "Birthday Design"
+        },
+        {
+          "image": "assets/uploads/tppic3.jpg",
+          "caption": "Sunday Service Design"
+        },
+        {
+          "image": "assets/uploads/tpic4.jpg",
+          "caption": "Sunday Funday"
+        }
+      ],
+      "brief": "TPPIC — Lagos needed consistency in their designs, linking deigns to each other so they can feel like one by maintaining font choice, colour palette and other resources that will contribute to the uniformity of the design.",
+      "tools": "Canva, Affinity, Photoshop, Adobe Illustrator",
+      "category": "Religious Organization"
     }
   ],
   "documents": [
@@ -254,7 +285,7 @@
   },
   "footer": {
     "title": "Let's work together.",
-    "name": "That Creative Bamzo — Creative Design. All Rights Reserved.",
+    "name": "That Creative Bamzo. All Rights Reserved.",
     "year": "2026"
   }
 }
