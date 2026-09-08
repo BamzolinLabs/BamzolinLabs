@@ -70,6 +70,10 @@
       {
         "name": "KwiikPos",
         "icon": "assets/uploads/kwiik-favicon.png"
+      },
+      {
+        "name": "Tithan",
+        "icon": "assets/uploads/fav.png"
       }
     ]
   },
@@ -112,7 +116,12 @@
       {
         "title": "Tithan",
         "description": "Tithan is a cloud platform for Developers.",
-        "status": "In Progress "
+        "status": "Launched"
+      },
+      {
+        "title": "Webprowale",
+        "description": "Webprowale is built for businesses that want more than a chatbot. It gives teams a practical automation layer for support, sales, knowledge, and operations, powered by AI agents.\n\n",
+        "status": "In Progress"
       }
     ]
   },
