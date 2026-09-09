@@ -136,6 +136,7 @@ collections:
                 field: { label: "Fact", name: "fact", widget: "string" }
               - { label: "\"View more\" button label", name: "view_more_label", widget: "string", required: false }
               - { label: "\"View more\" button link (leave blank to hide button)", name: "view_more_link", widget: "string", required: false }
+              - { label: "Accent color override for this case study (leave blank to use site default)", name: "accent_color", widget: "color", required: false }
 
           - label: "Currently Building"
             name: "building"
