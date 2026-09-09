@@ -114,7 +114,7 @@
   .hero-panel{
     position:relative;
     background:
-      radial-gradient(ellipse 90% 70% at 65% 35%, var(--accent) 0%, var(--accent-2) 45%, #2a0805 75%, #150703 100%);
+      radial-gradient(ellipse 140% 110% at 65% 35%, var(--accent) 0%, var(--accent-2) 45%, #2a0805 75%, #150703 100%);
     padding-bottom:40px;
     overflow:hidden;
   }
@@ -298,6 +298,10 @@
   }
   .cs-visual img{width:100%; height:100%; object-fit:cover; cursor:pointer; transition:transform 0.2s ease;}
   .cs-visual img:hover{transform:scale(1.03);}
+
+  /* SCROLL REVEAL */
+  .reveal{opacity:0; transform:translateY(28px); transition:opacity 0.7s ease, transform 0.7s ease;}
+  .reveal.reveal-visible{opacity:1; transform:translateY(0);}
 
   .view-more-wrap{display:flex; justify-content:center; margin-top:24px;}
   .view-more-btn{
@@ -487,7 +491,7 @@
 
   <section class="about" id="about">
     <div class="about-grid">
-      <div class="about-photo" id="about-photo"></div>
+      <div class="about-photo reveal" id="about-photo"></div>
       <div>
         <h2>A bit about me</h2>
         <div id="about-paragraphs"></div>
@@ -599,9 +603,9 @@ async function loadSite(){
   // GALLERY
   document.getElementById('gallery-grid').innerHTML = (data.gallery || []).map(g => {
     if (g.image){
-      return `<div class="gallery-item"><img src="${g.image}" alt="${escapeHtml(g.caption || '')}" loading="lazy" decoding="async"></div>`;
+      return `<div class="gallery-item reveal"><img src="${g.image}" alt="${escapeHtml(g.caption || '')}" loading="lazy" decoding="async"></div>`;
     }
-    return `<div class="gallery-item">${escapeHtml(g.caption || 'Add an image')}</div>`;
+    return `<div class="gallery-item reveal">${escapeHtml(g.caption || 'Add an image')}</div>`;
   }).join('');
 
   // SKILLS STRIP
@@ -615,7 +619,7 @@ async function loadSite(){
   // CASE STUDIES
   const studies = data.case_studies || [];
   document.getElementById('case-studies-container').innerHTML = studies.map((cs, idx) => `
-    <section class="case-study">
+    <section class="case-study" ${cs.accent_color ? `style="--accent:${cs.accent_color};"` : ''}>
       <div class="case-header">
         <span class="section-label">${escapeHtml(cs.label || '')}</span>
         <h2>${escapeHtml(cs.title || '')}</h2>
@@ -632,7 +636,7 @@ async function loadSite(){
       </div>
       <div class="deliverables">
         ${(cs.deliverables || []).map((d, i) => `
-          <div class="deliverable-card">
+          <div class="deliverable-card reveal">
             <span class="num">0${i + 1}</span>
             <h4>${escapeHtml(d.title)}</h4>
             <p>${escapeHtml(d.description)}</p>
@@ -641,8 +645,8 @@ async function loadSite(){
       </div>
       <div class="cs-visual-grid">
         ${(cs.images || []).map(v => v.image
-          ? `<div class="cs-visual"><img src="${v.image}" alt="${escapeHtml(v.caption || '')}" class="cs-lightbox-trigger" data-full="${v.image}" loading="lazy" decoding="async"></div>`
-          : `<div class="cs-visual">${escapeHtml(v.caption || 'Add an image')}</div>`
+          ? `<div class="cs-visual reveal"><img src="${v.image}" alt="${escapeHtml(v.caption || '')}" class="cs-lightbox-trigger" data-full="${v.image}" loading="lazy" decoding="async"></div>`
+          : `<div class="cs-visual reveal">${escapeHtml(v.caption || 'Add an image')}</div>`
         ).join('')}
       </div>
       ${cs.view_more_link ? `
@@ -666,7 +670,7 @@ async function loadSite(){
     document.getElementById('building-section').style.display = '';
     document.getElementById('building-heading').textContent = (data.building && data.building.heading) || 'Currently Building';
     document.getElementById('building-grid').innerHTML = building.map(b => `
-      <div class="building-card">
+      <div class="building-card reveal">
         ${b.status ? `<span class="status">${escapeHtml(b.status)}</span>` : ''}
         <h4>${escapeHtml(b.title || '')}</h4>
         <p>${escapeHtml(b.description || '')}</p>
@@ -681,7 +685,7 @@ async function loadSite(){
     document.getElementById('testimonials-section').style.display = '';
     document.getElementById('testimonials-heading').textContent = (data.testimonials && data.testimonials.heading) || 'What People Say';
     document.getElementById('testimonials-grid').innerHTML = testimonials.map(t => `
-      <div class="testimonial-card">
+      <div class="testimonial-card reveal">
         <p class="quote">"${escapeHtml(t.quote || '')}"</p>
         <p class="person"><b>${escapeHtml(t.name || '')}</b>${t.role ? ' — ' + escapeHtml(t.role) : ''}</p>
       </div>
@@ -702,7 +706,7 @@ async function loadSite(){
   if (docs.length){
     document.getElementById('documents-section').style.display = '';
     document.getElementById('doc-list').innerHTML = docs.map(d => `
-      <a class="doc-item" href="${d.file}" download>
+      <a class="doc-item reveal" href="${d.file}" download>
         <span>${escapeHtml(d.title)}</span>
         <span class="arrow">Download →</span>
       </a>
@@ -755,6 +759,23 @@ async function loadSite(){
     localStorage.setItem('bamzolin-theme', next);
     updateToggleIcon();
   });
+
+  // SCROLL REVEAL
+  const revealEls = document.querySelectorAll('.reveal');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion || !('IntersectionObserver' in window)){
+    revealEls.forEach(el => el.classList.add('reveal-visible'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('reveal-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  }
 }
 
 function escapeHtml(str){
