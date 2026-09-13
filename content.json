@@ -116,11 +116,16 @@
       {
         "title": "Tithan",
         "description": "Tithan is a cloud platform for Developers.",
-        "status": "Launched"
+        "status": "In Progress"
       },
       {
         "title": "Webprowale",
         "description": "Webprowale is built for businesses that want more than a chatbot. It gives teams a practical automation layer for support, sales, knowledge, and operations, powered by AI agents.\n\n",
+        "status": "In Progress"
+      },
+      {
+        "title": "PrymeLabs",
+        "description": "Applied AI research and infrastructure for the markets, languages, and domains today’s models don’t serve well.",
         "status": "In Progress"
       }
     ]
