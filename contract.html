@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working Together — Bamzolin</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0E0C0B">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0E0C0B;
+    --panel: #17140F;
+    --ink: #FFFFFF;
+    --ink-soft: #B9B2A8;
+    --accent: #FF5A1F;
+    --line: #2B2621;
+    --font-body: 'Space Grotesk', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{background:#0A0806;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+  a{color:inherit;}
+
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header{padding:26px 24px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between;}
+  .logo{font-weight:700; font-size:1.1rem; text-decoration:none;}
+  .back-link{font-size:0.88rem; color:var(--ink-soft); text-decoration:none;}
+  .back-link:hover{color:var(--ink);}
+
+  main{padding:60px 24px 100px;}
+  .eyebrow{font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-weight:600; margin-bottom:16px; display:block;}
+  h1{font-weight:700; font-size:clamp(1.8rem, 5vw, 2.6rem); line-height:1.15; margin-bottom:20px; letter-spacing:-0.01em;}
+  .intro{font-size:1.02rem; color:var(--ink-soft); margin-bottom:36px; max-width:56ch;}
+  .contract-body{color:rgba(255,255,255,0.88); font-size:0.98rem;}
+  .contract-body p{margin-bottom:18px;}
+
+  .cta-block{
+    margin-top:48px; padding-top:40px; border-top:1px solid var(--line);
+    display:flex; flex-direction:column; align-items:flex-start; gap:18px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:14px 12px 14px 26px;
+    border-radius:100px;
+    background:var(--accent); color:#fff;
+    font-size:0.98rem; font-weight:600;
+    text-decoration:none;
+    transition:transform 0.15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn .arrow{
+    width:26px; height:26px; border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.85rem;
+  }
+
+  @media (max-width:600px){
+    header{padding:20px 20px;}
+    main{padding:44px 20px 70px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo" id="site-logo">Bamzolin</a>
+  <a href="index.html" class="back-link">← Back to home</a>
+</header>
+
+<main class="wrap">
+  <span class="eyebrow">Working Together</span>
+  <h1 id="contract-heading">Loading...</h1>
+  <p class="intro" id="contract-intro"></p>
+  <div class="contract-body" id="contract-body"></div>
+
+  <div class="cta-block">
+    <a href="#" class="btn" id="contract-cta">Proceed to Hire Me <span class="arrow">→</span></a>
+  </div>
+</main>
+
+<script>
+async function loadContract(){
+  let data;
+  try{
+    const res = await fetch('content.json', { cache: 'no-store' });
+    data = await res.json();
+  }catch(e){
+    console.error('Could not load content.json', e);
+    return;
+  }
+
+  if (data.theme){
+    const root = document.documentElement.style;
+    if (data.theme.bg_color) root.setProperty('--bg', data.theme.bg_color);
+    if (data.theme.text_color) root.setProperty('--ink', data.theme.text_color);
+    if (data.theme.accent_color) root.setProperty('--accent', data.theme.accent_color);
+    if (data.theme.font_body) root.setProperty('--font-body', `'${data.theme.font_body}', sans-serif`);
+  }
+  if (data.nav && data.nav.logo_text){
+    document.getElementById('site-logo').textContent = data.nav.logo_text;
+  }
+
+  const c = data.contract || {};
+  document.getElementById('contract-heading').textContent = c.heading || 'Working Together';
+  document.getElementById('contract-intro').textContent = c.intro || '';
+  document.getElementById('contract-body').innerHTML = (c.paragraphs || [])
+    .map(p => `<p>${escapeHtml(p)}</p>`).join('');
+
+  const cta = document.getElementById('contract-cta');
+  cta.href = c.cta_link || '#';
+  cta.innerHTML = `${escapeHtml(c.cta_label || 'Proceed to Hire Me')} <span class="arrow">→</span>`;
+}
+
+function escapeHtml(str){
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+loadContract();
+</script>
+
+</body>
+</html>
