@@ -15,16 +15,6 @@
     "cta_label": "Hire Me",
     "cta_link": "contract.html"
   },
-  "contract": {
-     "heading": "Working Together",
-     "intro": "Before we get started, here's a quick overview of how I work.",
-     "paragraphs": [
-       "Add your first contract term or working agreement here.",
-       "Add a second paragraph here."
-     ],
-     "cta_label": "Proceed to Hire Me",
-     "cta_link": "https://wa.link/vvxcn2"
-   },
   "contact_form": {
     "formspree_id": "mkjnoznr"
   },
@@ -93,6 +83,17 @@
       "I'm Bamzolin, a self-taught graphic designer working under Bamzolin Labs. My approach is rooted in intentional visual storytelling — bold, high-contrast compositions that carry emotional weight, whether I'm building a brand identity, an app icon, or a campaign visual. Alongside design, I bring a Mechanical Engineering background into my process, which shows up as precision in the details: grid systems, geometry, and production specs that hold up at any scale.",
       "My work spans branding and visual identity for platforms like PrymeKids, an educational space for children, as well as personal and community projects that lean into symbolism and narrative depth. I care about the story behind every project as much as the final output — every color, shape, and layout choice is made to serve something bigger. Bamzolin Labs is where that philosophy lives: a space where design meets purpose."
     ]
+  },
+  "contract": {
+    "heading": "Client Service Agreement",
+    "intro": "Welcome! Before we kick off your design project, please review these straightforward terms. By checking the agreement box or paying your project invoice, you agree to the following workflow.",
+    "paragraphs": [
+      "Payment Schedule\n\n60% Deposit (Commission): Required to secure your project slot and begin design work.\n\n40% Final Balance (Completion): Due upon your final approval of the designs, right before final production assets and source files are released.\n\nScope and Revisions\n\nYour project invoice outlines the exact deliverables included in your package.\n\nWe include up to two rounds of revisions with every standard project to refine the designs to your satisfaction.\n\nAdditional feature requests or extra revision rounds beyond the original scope will be quoted separately before any extra work is done.",
+      "Files and Ownership\n\nOnce the final 40% balance is cleared, full copyright and usage rights for the final approved deliverables transfer entirely to you.\n\nWe reserve the right to display the finished work in our design portfolio and social channels unless we have agreed on a non-disclosure arrangement beforehand.\n\nCancellations and Delays\n\nThe initial 60% deposit covers reserved calendar time, initial research, and project setup, making it non-refundable.\n\nIf you need to pause or cancel mid-project, you will receive all drafts and design files completed up to that point.\n\nIf we ever need to cancel a project from our end due to an unforeseen emergency, any unused portion of your funds will be promptly refunded.",
+      "Checking the \"I agree to the Terms of Service\" box on the form (or submitting your 60% deposit invoice) acts as your electronic signature to begin the project."
+    ],
+    "cta_label": "Proceed to Hire Me",
+    "cta_link": "https://wa.link/vvxcn2"
   },
   "gallery": [
     {
