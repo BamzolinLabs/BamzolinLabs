@@ -13,8 +13,18 @@
     "logo_text": "That Creative Bamzo",
     "links": [],
     "cta_label": "Hire Me",
-    "cta_link": "https://wa.link/vvxcn2"
+    "cta_link": "contract.html"
   },
+  "contract": {
+     "heading": "Working Together",
+     "intro": "Before we get started, here's a quick overview of how I work.",
+     "paragraphs": [
+       "Add your first contract term or working agreement here.",
+       "Add a second paragraph here."
+     ],
+     "cta_label": "Proceed to Hire Me",
+     "cta_link": "https://wa.link/vvxcn2"
+   },
   "contact_form": {
     "formspree_id": "mkjnoznr"
   },
