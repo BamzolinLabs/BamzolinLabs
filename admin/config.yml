@@ -58,6 +58,7 @@ collections:
                 name: "paragraphs"
                 widget: "list"
                 field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Agreement checkbox label", name: "agreement_label", widget: "string", required: false }
               - { label: "\"Proceed to Hire Me\" button label", name: "cta_label", widget: "string" }
               - { label: "\"Proceed to Hire Me\" button link (your real WhatsApp/contact link)", name: "cta_link", widget: "string" }
 
